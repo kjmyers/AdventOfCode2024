@@ -1,6 +1,6 @@
 from collections import Counter 
 
-with open('input.txt','r') as f:
+with open('../Input/input1.txt','r') as f:
     list1 = []
     list2 = []
     for line in f:
@@ -9,8 +9,6 @@ with open('input.txt','r') as f:
         list2.append(int(nums[-1]))
     
     freq = Counter(list2)
-    print(freq)
-
     ret = 0
     for num in list1:
         ret += num * freq[num]

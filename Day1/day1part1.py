@@ -1,4 +1,4 @@
-with open('input.txt','r') as f:
+with open('../Input/input1.txt','r') as f:
     list1 = []
     list2 = []
     for line in f:
